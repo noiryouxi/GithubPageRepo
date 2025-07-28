@@ -1,18 +1,5 @@
-import React from 'react';
-import Introduction from '../components/Introduction';
-import Skills from '../components/Skills';
-import Projects from '../components/Projects';
-import NotFound from './not-found';
+import { redirect } from 'next/navigation';
 
-const Home: React.FC = () => {
-  return (
-    <section>
-      <Introduction />
-      <Skills />
-      <Projects />
-      <NotFound />
-    </section>
-  );
-};
-
-export default Home;
+export default function Page() {
+  redirect('/about');
+}

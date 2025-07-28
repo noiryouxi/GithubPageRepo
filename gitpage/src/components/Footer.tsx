@@ -1,8 +1,12 @@
+import React from 'react';
+import '../styles/footer.css';
 
 const Footer: React.FC = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
-    <footer>
-      <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+    <footer className="footer">
+      <p>© {currentYear} None. All Rights Reserved.</p>
     </footer>
   );
 };
